@@ -16,26 +16,30 @@ const Portfolio = () => {
       <div className="col-span-10 lg:col-span-6 mt-5 px-10 lg:px-0 lg:mt-0 mb-10">
         <h1 class="text-3xl text-white font-bold">Web developer portfolio</h1>
         <p className="text-gray-400 mt-5 text-justify">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius adipisci iure autem at dignissimos natus expedita architecto, numquam est quaerat, esse quia laudantium voluptatem reiciendis iste nisi veniam molestiae dolore.
+          Through this portfolio, you'll get a glimpse into my skills, experiences, and the projects I've had the privilege to work on. As a web developer, I'm dedicated to crafting visually appealing, user-friendly, and technically robust websites. Whether it's front-end design, back-end functionality, or the seamless integration of both, I take pride in delivering projects that make an impact.
         </p>
         <div className="grid grid-cols-2 gap-10 mt-10">
-          <div className="col-span-2 sm:col-span-1 relative">
+          <div className="col-span-2 sm:col-span-1 relative group">
             <div className="absolute bg-gray-800 bg-opacity-[0.8] h-60 w-full -z-10 -right-2 top-2"></div>
-            <div className="h-60 bg-gray-900 z-20"></div>
+            <div className="h-60 bg-project1 bg-cover z-20"></div>
+            <div class="absolute inset-0 bg-black transition-opacity duration-300 opacity-0 group-hover:opacity-50"></div>
           </div>
-          <div className="col-span-2 sm:col-span-1 relative">
+          <div className="col-span-2 sm:col-span-1 relative group">
             <div className="absolute bg-gray-800 bg-opacity-[0.8] h-60 w-full -z-10 -right-2 top-2"></div>
-            <div className="h-60 bg-gray-900 z-20"></div>
+            <div className="h-60 bg-project2 bg-cover z-20"></div>
+            <div class="absolute inset-0 bg-black transition-opacity duration-300 opacity-0 group-hover:opacity-50"></div>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-10 mt-10">
-          <div className="col-span-2 sm:col-span-1 relative">
+          <div className="col-span-2 sm:col-span-1 relative group">
             <div className="absolute bg-gray-800 bg-opacity-[0.8] h-60 w-full -z-10 -right-2 top-2"></div>
-            <div className="h-60 bg-gray-900 z-20"></div>
+            <div className="h-60 bg-project3 bg-cover z-20"></div>
+            <div class="absolute inset-0 bg-black transition-opacity duration-300 opacity-0 group-hover:opacity-50"></div>
           </div>
-          <div className="col-span-2 sm:col-span-1 relative">
+          <div className="col-span-2 sm:col-span-1 relative group">
             <div className="absolute bg-gray-800 bg-opacity-[0.8] h-60 w-full -z-10 -right-2 top-2"></div>
             <div className="h-60 bg-gray-900 z-20"></div>
+            <div class="absolute inset-0 bg-black transition-opacity duration-300 opacity-0 group-hover:opacity-50"></div>
           </div>
         </div>
       </div>

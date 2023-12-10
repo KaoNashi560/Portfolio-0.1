@@ -12,20 +12,12 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <Route exact path="/">
-        <Redirect to="/about" />
-      </Route>
+      <Route exact path="/" component={ About } />
       <main className="mt-10">
         <Switch>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route path="/portfolio">
-            <Portfolio />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
+          <Route exact path="/about" component={ About } />
+          <Route path="/portfolio" component={ Portfolio } />
+          <Route path="/contact" component={ Contact } />
         </Switch>
       </main>
     </Router>
