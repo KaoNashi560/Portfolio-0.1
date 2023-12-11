@@ -12,7 +12,9 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <Route exact path="/" component={ About } />
+      <Route exact path="/">
+        <Redirect to="/about" />
+      </Route>
       <main className="mt-10">
         <Switch>
           <Route exact path="/about" component={ About } />
