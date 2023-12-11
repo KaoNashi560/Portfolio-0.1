@@ -35,7 +35,7 @@ const Contact = () => {
       e.preventDefault()
       setPending(true)
       const inbox = { name, email, message }
-      fetch("http://localhost:8000/inboxes", {
+      fetch("https://portfolio-0-point-1-default-rtdb.asia-southeast1.firebasedatabase.app/inboxes.json", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(inbox)
