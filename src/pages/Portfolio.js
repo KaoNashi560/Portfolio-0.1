@@ -21,7 +21,7 @@ const Portfolio = () => {
         <div className="grid grid-cols-2 gap-10 mt-10">
           <div className="col-span-2 sm:col-span-1 relative group">
             <div className="absolute bg-gray-800 bg-opacity-[0.8] h-60 w-full -z-10 -right-2 top-2"></div>
-            <div className="h-60 bg-project1 bg-cover z-20"></div>
+            <div className="h-60 bg-center bg-project1 bg-cover z-20"></div>
             <div class="absolute inset-0 bg-black transition-all duration-300 bg-opacity-0 group-hover:bg-opacity-50">
               <a href="https://kaonashi560.github.io/E-Shop/src" target="blank" className="opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-5 h-5 absolute right-2 top-2 cursor-pointer">
@@ -43,7 +43,7 @@ const Portfolio = () => {
           </div>
           <div className="col-span-2 sm:col-span-1 relative group">
             <div className="absolute bg-gray-800 bg-opacity-[0.8] h-60 w-full -z-10 -right-2 top-2"></div>
-            <div className="h-60 bg-project2 bg-cover z-20"></div>
+            <div className="h-60 bg-center bg-project2 bg-cover z-20"></div>
             <div class="absolute inset-0 bg-black transition-all duration-300 bg-opacity-0 group-hover:bg-opacity-[0.7]">
               <a href="https://kaonashi560.github.io/Interpret/" target="blank" className="opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-5 h-5 absolute right-2 top-2 cursor-pointer">
@@ -67,7 +67,7 @@ const Portfolio = () => {
         <div className="grid grid-cols-2 gap-10 mt-10">
           <div className="col-span-2 sm:col-span-1 relative group">
             <div className="absolute bg-gray-800 bg-opacity-[0.8] h-60 w-full -z-10 -right-2 top-2"></div>
-            <div className="h-60 bg-project3 bg-cover z-20"></div>
+            <div className="h-60 bg-center bg-project3 bg-cover z-20"></div>
             <div class="absolute inset-0 bg-black transition-all duration-300 bg-opacity-0 group-hover:bg-opacity-[0.7]">
               <a href="https://kaonashi560.github.io/TicTacToe/" target="blank" className="opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-5 h-5 absolute right-2 top-2 cursor-pointer">
