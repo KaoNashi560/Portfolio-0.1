@@ -90,7 +90,13 @@ const Portfolio = () => {
           <div className="col-span-2 sm:col-span-1 relative group">
             <div className="absolute bg-gray-800 bg-opacity-[0.8] h-60 w-full -z-10 -right-2 top-2"></div>
             <div className="h-60 bg-gray-900 z-20"></div>
-            <div class="absolute inset-0 bg-black transition-opacity duration-300 opacity-0 group-hover:opacity-[0.7]"></div>
+            <div class="absolute inset-0 bg-black transition-all duration-300 bg-opacity-0 group-hover:bg-opacity-[0.7]">
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-3">
+                <span className="shadow font-bold text-xs whitespace-nowrap me-2 bg-gray-400 p-2 text-gray-700 rounded-lg transition-all duration-500 ease-out opacity-0 group-hover:opacity-100">
+                  Comming Soon
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
