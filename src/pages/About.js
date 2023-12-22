@@ -25,7 +25,7 @@ const About = () => {
       </div>
       <div className="col-span-10 order-2 lg:order-2 lg:col-span-6 justify-center text-center mt-5 px-10 lg:px-0 lg:mt-0">
         <div className="text-white">
-          <h1 className="text-3xl font-bold">Hello, my name is Kaero Naldge,</h1>
+          <h1 className="text-3xl font-bold">Hello, my name is Althon Dimple M. Tomada,</h1>
           <p className="text-gray-400 mt-5 text-justify lg:text-center">
              <TypingEffect text="a  passionate and aspiring junior web developer. I have a solid foundation in HTML, CSS, and JavaScript, and I'm eager to contribute my skills to create engaging and user-friendly websites. I'm currently honing my skills in front-end and back-end development, and I'm excited about exploring new technologies and frameworks." />
           </p>

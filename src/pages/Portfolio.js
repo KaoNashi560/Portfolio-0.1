@@ -33,9 +33,6 @@ const Portfolio = () => {
                   HTML
                 </span>
                 <span className="shadow font-bold text-xs whitespace-nowrap me-2 bg-gray-400 p-2 text-gray-700 rounded-lg transition-all duration-500 ease-out opacity-0 group-hover:opacity-100">
-                  Node JS
-                </span>
-                <span className="shadow font-bold text-xs whitespace-nowrap me-2 bg-gray-400 p-2 text-gray-700 rounded-lg transition-all duration-500 ease-out opacity-0 group-hover:opacity-100">
                   Tailwind CSS
                 </span>
               </div>
