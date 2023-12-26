@@ -42,6 +42,7 @@ const Contact = () => {
       }).then(() => {
         setTimeout(function() {
           setPending(false)
+          alertMessage()
           setName('')
           setEmail('')
           setMessage('')
@@ -49,6 +50,14 @@ const Contact = () => {
         }, 1000)
       })
     }
+  }
+
+  const alertMessage = () => {
+    const alertMessage = document.querySelector("#alert-message")
+    alertMessage.classList.add("!opacity-100")
+    setTimeout(function() {
+      alertMessage.classList.remove("!opacity-100")
+    }, 2000)
   }
   return (
     <div className={`grid grid-cols-10 gap-5 lg:mt-20 ${ isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10' } transition-all duration-[2000ms] ease-in-out`}>
@@ -67,7 +76,7 @@ const Contact = () => {
             <form>
               <div className="sm:grid grid-cols-2 gap-8">
                 <div className="relative col-span-1">
-                  <input required onKeyUp={ toggleLabel } onChange={ (e) => setName(e.target.value) } value={ name } type="text" className="capitalize border-b w-[100%] bg-transparent font-bold text-lg outline-none text-gray-400 px-1" />
+                  <input required autoFocus onKeyUp={ toggleLabel } onChange={ (e) => setName(e.target.value) } value={ name } type="text" className="capitalize border-b w-[100%] bg-transparent font-bold text-lg outline-none text-gray-400 px-1" />
                   <span className="text-gray-500 font-bold block transform duration-150 transition-all ease-out absolute start-1 text-lg -z-10 top-0">Fill with your name</span>
                 </div>
                 <div className="mt-10 sm:mt-0 relative col-span-1">
@@ -79,9 +88,12 @@ const Contact = () => {
                 <input required onKeyUp={ toggleLabel } onChange={ (e) => setMessage(e.target.value) } value={ message } type="text" className="border-b w-[100%] bg-transparent font-bold text-lg outline-none text-gray-400 px-1" />
                 <span className="text-gray-500 font-bold block transform duration-150 transition-all ease-out absolute start-1 text-lg -z-10 top-0">Message</span>
               </div>
-              <div className="flex gap-4 mt-10">
-                <input type="reset" onClick={ toggleLabelPosition } className="bg-gray-600 p-2 text-gray-200 text-sm font-bold uppercase tracking-wider px-3 rounded-lg shadow hover:bg-gray-800 transition ease-out duration-300" value="reset" /> 
-                { !pending ? <input type="submit" onClick={ handleSubmit } className="bg-red-600 p-2 text-gray-200 text-sm font-bold uppercase tracking-wider px-3 rounded-lg shadow hover:bg-red-800 transition ease-out duration-300" value="submit" />  : <input type="submit" onClick={ handleSubmit } className="bg-red-800 p-2 text-gray-200 text-sm font-bold uppercase tracking-wider px-3 rounded-lg shadow transition ease-out duration-300 disabled" value="submiting..." /> }
+              <div className="flex justify-between mt-10 items-center">
+                <div className="flex gap-4">
+                  <input type="reset" onClick={ toggleLabelPosition } className="bg-gray-600 p-2 text-gray-200 text-sm font-bold uppercase tracking-wider px-3 rounded-lg shadow hover:bg-gray-800 transition ease-out duration-300" value="reset" /> 
+                  { !pending ? <input type="submit" onClick={ handleSubmit } className="bg-red-600 p-2 text-gray-200 text-sm font-bold uppercase tracking-wider px-3 rounded-lg shadow hover:bg-red-800 transition ease-out duration-300" value="submit" />  : <input type="submit" onClick={ handleSubmit } className="bg-red-800 p-2 text-gray-200 text-sm font-bold uppercase tracking-wider px-3 rounded-lg shadow transition ease-out duration-300 disabled" value="submiting..." /> }
+                </div>
+                <div id="alert-message" className="transition-opacity duration-300 opacity-0 bg-green-400 font-bold shadow-lg rounded-lg text-gray-50 px-4 py-2 uppercase text-sm">Successfully sent!</div>
               </div>
             </form>
           </div>

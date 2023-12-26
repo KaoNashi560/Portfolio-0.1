@@ -12,7 +12,7 @@ const About = () => {
       <div className="col-span-5 lg:col-span-2 text-sm text-white font-bold tracking-wider">
         <div className="sticky top-[200px]">
           <div className="block mb-2">
-            <a href="https://web.facebook.com/unani.mous.716" target="blank" className="w-24 bg-blue-700 shadow p-2 inline-block text-center transition-all ease-out duration-300 hover:w-28">
+            <a href="https://web.facebook.com/althon.tomada.5/" target="blank" className="w-24 bg-blue-700 shadow p-2 inline-block text-center transition-all ease-out duration-300 hover:w-28">
               Facebook
             </a>
           </div>
