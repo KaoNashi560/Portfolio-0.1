@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const TypingEffect = ({ text }) => {
   const [displayedText, setDisplayedText] = useState('');
@@ -7,14 +7,13 @@ const TypingEffect = ({ text }) => {
     const intervalId = setInterval(() => {
       setDisplayedText((prevText) => prevText + text[index]);
       index += 1;
-      if (index === text.length) {
+      if (index === (text.length - 1)) {
         clearInterval(intervalId);
       }
     }, 15);
-
     return () => clearInterval(intervalId);
   }, [text]);
-
+  console.log(displayedText)
   return displayedText;
 };
 
